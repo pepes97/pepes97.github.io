@@ -350,6 +350,36 @@ section {
   margin-bottom: 0;
 }
 
+
+.pub .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #173b6c;
+}
+
+.pub .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pub .content ul li {
+  align-items: center;
+}
+
+.pub .content ul strong {
+  margin-right: 10px;
+}
+
+.pub .content ul p i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #149ddd;
+  line-height: 0;
+}
+
+.pub .content p:last-child {
+  margin-bottom: 0;
+}
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
