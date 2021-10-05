@@ -335,7 +335,6 @@
                 <a href="portfolio/portfolio1-details.html" title="More Details"><i class="bx bx-detail"></i></a>
               </div>
             </div>
-
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-rob filter-hri">
@@ -386,7 +385,6 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app filter-o">
             <div class="portfolio-wrap bg-white">
               <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="">
-
               <div class="portfolio-info bg-white mt-2"><b><i>Share the music: chat with others who share your musical
                     preferences</i></b></div>
               <div class="portfolio-links">
@@ -397,8 +395,6 @@
             </div>
 
           </div>
-
-
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app filter-nlp filter-mac">
             <div class="portfolio-wrap bg-white">
@@ -470,10 +466,6 @@
             </div>
 
           </div>
-
-
-
-
         </div>
 
       </div>
@@ -524,9 +516,8 @@
           
           <div class="col-lg-3 d-flex align-items-stretch">
             <div class="info">
-              <br>
               <div class="email">
-                <a href="mailto: sveva.pepe@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+                <a href="mailto:sveva.pepe@gmail.com"><i class="bi bi-envelope"></i></a>
                 <h4>Email:</h4>
                 <p>sveva.pepe@gmail.com</p>
               </div>
@@ -567,20 +558,20 @@
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="entry.834138521">Your Name</label>
-                  <input type="text" name="entry.834138521" class="form-control" id="entry.834138521" required>
+                  <input type="text" name="entry.834138521" class="form-control" id="entry.834138521" autocomplete="off" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="entry.352649424">Your Email</label>
-                  <input type="email" class="form-control" name="entry.352649424" id="entry.352649424" required>
+                  <input type="email" class="form-control" name="entry.352649424" id="entry.352649424" autocomplete="off"  required>
                 </div>
               </div>
               <div class="form-group">
                 <label for="entry.778761771">Subject</label>
-                <input type="text" class="form-control" name="entry.778761771" id="entry.778761771" required>
+                <input type="text" class="form-control" name="entry.778761771" id="entry.778761771" autocomplete="off"  required>
               </div>
               <div class="form-group">
                 <label for="entry.1268692682">Message</label>
-                <textarea class="form-control" name="entry.1268692682" id="entry.1268692682" rows="10" required></textarea>
+                <textarea class="form-control" name="entry.1268692682" id="entry.1268692682" rows="10" autocomplete="off" required></textarea>
               </div>
               <div class="text-center"><button id="send_form" type="submit" value="submit">Send Message</button></div>
             </form>
@@ -627,21 +618,10 @@
  
   <script type="text/javascript">
 
-
-      // $("#send_form").click(function() {
-      //     let email_text = document.getElementById("entry.352649424").value
-      //     let name_text = document.getElementById("entry.834138521").value
-      //     let sub_text = document.getElementById("entry.778761771").value
-      //     let message_text = document.getElementById("entry.1268692682").value
-      //     Swal.fire('Good job!','Your email has been sent','success' )
-      //     window.location.reload(true);
-
-      // });
-
       $('#gform').on('submit', function(e){
           $('#gform *').fadeOut(2000);
           $('#gform').prepend('Your message has been sent. Thank you!');
-          // window.location.reload(true)
+          setTimeout(window.location.reload.bind(window.location), 5000);
       });
   </script>
   <!-- Template Main JS File -->
