@@ -519,44 +519,39 @@
 
         <div class="row" data-aos="fade-in">
 
-          <div class="mt-5 mt-lg-0 d-flex align-items-stretch">
+          <div class="col-lg-3 d-flex align-items-stretch">
             <div class="info">
-              <div class="row">
-                <div class="email col">
-                  <a href="mailto: sveva.pepe@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
-                  <h4>Email:</h4>
-                  <p>sveva.pepe@gmail.com</p>
-                </div>
-                <div class="address col">
-                  <a href="https://telegram.me/svevapepe" target="_blanck"><i class="bi bi-telegram"></i></a>
-                  <h4>Telegram: </h4>
-                  <p>@svevapepe</p>
-                </div>
-                <div class="phone col">
-                  <a href="https://twitter.com/svevapepe" target="_blanck"><i class="bi bi-twitter"></i></a>
-                  <h4>Twitter:</h4>
-                  <p>@svevapepe</p>
-                </div>
+              <br>
+              <div class="email">
+                <a href="mailto: sveva.pepe@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+                <h4>Email:</h4>
+                <p>sveva.pepe@gmail.com</p>
               </div>
-              <div class="row">
-                <div class="phone col">
-                  <a href="https://www.instagram.com/sveva_pepe/" target="_blanck"><i class="bi bi-instagram"></i></a>
-                  <h4>Instagram:</h4>
-                  <p>@sveva_pepe</p>
-                </div>
+              <br>
+              <div class="address">
+                <a href="https://telegram.me/svevapepe" target="_blanck"><i class="bi bi-telegram"></i></a>
+                <h4>Telegram: </h4>
+                <p>@svevapepe</p>
+              </div>
+              <br>
+              <div class="phone">
+                <a href="https://twitter.com/svevapepe" target="_blanck"><i class="bi bi-twitter"></i></a>
+                <h4>Twitter:</h4>
+                <p>@svevapepe</p>
+              </div>
+              <br>
+              <div class="phone">
+                <a href="https://www.instagram.com/sveva_pepe/" target="_blanck"><i class="bi bi-instagram"></i></a>
+                <h4>Instagram:</h4>
+                <p>@sveva_pepe</p>
+              </div>
+              <br>
 
-                <div class="phone col">
-                  <a href="https://www.github.com/pepes97" target="_blanck"><i class="bi bi-github"></i></a>
-                  <h4>Github:</h4>
-                  <p>pepes97</p>
-                </div>
-                <div class="phone col">
-                  <a href="https://www.linkedin.com/in/sveva-pepe-ba9945123/" target="_blanck"><i class="bi bi-linkedin"></i></a>
-                  <h4>Linkedin:</h4>
-                  <p>Sveva Pepe</p>
-                </div>
+              <div class="phone">
+                <a href="https://www.github.com/pepes97" target="_blanck"><i class="bi bi-github"></i></a>
+                <h4>Github:</h4>
+                <p>pepes97</p>
               </div>
-              
 
               <!-- <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
@@ -564,26 +559,25 @@
             </div>
 
           </div>
-
-          <!-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form id="gform" name="gform" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSfqqnbnL60bsAcz2RuiZ0JiQO3I4I-nK0w7x-2Sf3Qgdysr8Q/formResponse?" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                  <label for="entry.834138521">Your Name</label>
+                  <input type="text" name="entry.834138521" class="form-control" id="entry.834138521" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                  <label for="entry.352649424">Your Email</label>
+                  <input type="email" class="form-control" name="entry.352649424" id="entry.352649424" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                <label for="entry.778761771">Subject</label>
+                <input type="text" class="form-control" name="entry.778761771" id="entry.778761771" required>
               </div>
               <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <label for="entry.1268692682">Message</label>
+                <textarea class="form-control" name="entry.1268692682" rows="10" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -592,9 +586,10 @@
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:None;" onload="if(submitted){}"> </iframe>
           </div>
 
-        </div> -->
+        </div>
 
       </div>
     </section><!-- End Contact Section -->
@@ -630,7 +625,17 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+      var submitted = false;
+  </script>
+  <script type="text/javascript">
+      $('#gform').on('submit', function(e){
+          $('#gform *').fadeOut(2000);
+          $('#gform').prepend('Your message has been sent. Thank you!');
+          window.location = 'index.html';
+      });
+  </script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
