@@ -621,7 +621,9 @@
       $('#gform').on('submit', function(e){
           $('#gform *').fadeOut(2000);
           $('#gform').prepend('Your message has been sent. Thank you!');
-          setTimeout(window.location.reload.bind(window.location), 5000);
+
+          // submitted = false;
+          // setTimeout(window.location.reload.bind(window.location), 5000);
       });
   </script>
   <!-- Template Main JS File -->
