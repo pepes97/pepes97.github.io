@@ -70,6 +70,9 @@
       </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
+  <script type="text/javascript">
+    var submitted = false;
+  </script>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
@@ -560,7 +563,7 @@
 
           </div>
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form id="gform" name="gform" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSfqqnbnL60bsAcz2RuiZ0JiQO3I4I-nK0w7x-2Sf3Qgdysr8Q/formResponse?" class="php-email-form">
+            <form id="gform" name="gform" enctype="text/plain" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSfqqnbnL60bsAcz2RuiZ0JiQO3I4I-nK0w7x-2Sf3Qgdysr8Q/formResponse?" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="entry.834138521">Your Name</label>
@@ -579,7 +582,7 @@
                 <label for="entry.1268692682">Message</label>
                 <textarea class="form-control" name="entry.1268692682" id="entry.1268692682" rows="10" required></textarea>
               </div>
-              <div class="text-center"><button type="submit" value="submit">Send Message</button></div>
+              <div class="text-center"><button id="send_form" type="submit" value="submit">Send Message</button></div>
             </form>
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:None;" onload="if(submitted){}"> </iframe>
           </div>
@@ -615,16 +618,26 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ 
   <script type="text/javascript">
-      var submitted = false;
-  </script>
-  <script type="text/javascript">
+
+
+      // $("#send_form").click(function() {
+      //     let email_text = document.getElementById("entry.352649424").value
+      //     let name_text = document.getElementById("entry.834138521").value
+      //     let sub_text = document.getElementById("entry.778761771").value
+      //     let message_text = document.getElementById("entry.1268692682").value
+      //     Swal.fire('Good job!','Your email has been sent','success' )
+      //     window.location.reload(true);
+
+      // });
+
       $('#gform').on('submit', function(e){
           $('#gform *').fadeOut(2000);
           $('#gform').prepend('Your message has been sent. Thank you!');
