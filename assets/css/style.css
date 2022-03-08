@@ -13,6 +13,7 @@ body {
   color: #272829;
 }
 
+
 a {
   color: #149ddd;
   text-decoration: none;
@@ -322,6 +323,13 @@ section {
   font-weight: 700;
   font-size: 26px;
   color: #173b6c;
+}
+
+h3.signature {
+  font-family: "Herr Von Muellerhoff", cursive; 
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 2.5rem;
 }
 
 .about .content ul {
