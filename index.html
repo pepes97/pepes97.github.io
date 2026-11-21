@@ -1,802 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Sveva Pepe Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sveva Pepe — AI/ML Engineer</title>
+  <meta name="description" content="Sveva Pepe, AI/ML Engineer in Rome. AI architecture and LLM agents for an enterprise product; NER and relation extraction on judicial documents for the public sector.">
+  <meta property="og:title" content="Sveva Pepe — AI/ML Engineer">
+  <meta property="og:description" content="AI architecture, LLM agents, and entity & relation extraction from legal documents.">
+  <meta property="og:image" content="assets/img/profile-img-sveva.png">
+  <meta name="theme-color" content="#fcfcfa">
   <link href="assets/img/sp-icon.png" rel="icon">
-  <link href="assets/img/sp-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
-
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link href="assets/css/site.css" rel="stylesheet">
 </head>
-
 <body>
+  <a class="skip" href="#work" data-i18n="skip">Skip to content</a>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/profile-mini-sveva.jpeg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html"><h3 class="signature h1" style="font-weight: 400; font-size: 2.5rem;">Sveva Pepe</h3>
-        </a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/svevapepe" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/sveva.pepe/" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/sveva_pepe/" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/sveva-pepe-ba9945123/" class="linkedin"><i
-              class="bx bxl-linkedin"></i></a>
-        </div>
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a class="logo" href="#top">sveva_pepe</a>
+      <nav aria-label="Sections">
+        <a href="#work"><i>§1</i> <span data-i18n="navWork">Now</span></a>
+        <a href="#before"><i>§2</i> <span data-i18n="navBefore">Before</span></a>
+        <a href="#experience"><i>§3</i> <span data-i18n="navExp">Experience</span></a>
+        <a href="#skills"><i>§4</i> <span data-i18n="navSkills">Skills</span></a>
+        <a href="#research"><i>§5</i> <span data-i18n="navResearch">Research</span></a>
+        <a href="#contact"><i>§6</i> <span data-i18n="navContact">Contact</span></a>
+      </nav>
+      <div class="nav-act">
+        <button id="lang" class="lang" type="button" aria-label="Italiano">IT</button>
       </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i
-                class="bx bx-book-content"></i><span>Portfolio</span></a></li>
-          <li><a href="#publications" class="nav-link scrollto"><i class="bx bxs-quote-alt-left "></i>
-              <span>Publications</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
     </div>
-  </header><!-- End Header -->
-  <script type="text/javascript">
-    var submitted = false;
-  </script>
+  </header>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Sveva Pepe</h1>
-      <p>I'm <span class="typed"
-          data-typed-items="a NLP Engineer, an Artificial Intelligence Engineer"></span>
-      </p>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About Me</h2>
+  <main id="top">
+    <!-- ============ HERO: the page as an annotated document ============ -->
+    <section class="hero wrap">
+      <div class="doc">
+        <div class="doc-head">
+          <p class="file">cv_sveva_pepe.txt</p>
+          <button id="ann" class="toggle" type="button" aria-pressed="true">
+            <span class="sw" aria-hidden="true"></span><span data-i18n="annotated">annotations on</span>
+          </button>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-mini-sveva.jpeg" class="img-fluid" alt="" width="320px">
-          </div>
-          <div class="col-lg-8 pt-3 pt-lg-0 content" data-aos="fade-left">
-            <h3>NLP & Artificial Intelligence Engineer</h3>
+        <h1 class="visually-hidden">Sveva Pepe — AI/ML Engineer</h1>
+        <p id="annotated" class="annot" data-i18n="annot">
+          <mark class="e-per" data-r="r1 r2 r3" data-l="PERSON">Sveva Pepe</mark> is an
+          <mark class="e-role" data-r="r2" data-l="ROLE">AI/ML Engineer</mark> at
+          <mark class="e-org" data-r="r1" data-l="ORG">Almawave Labs</mark>,
+          <mark class="e-loc" data-r="r6" data-l="LOC">Rome</mark>.
+          Since <mark class="e-date" data-r="r3" data-l="DATE">2025</mark> she designs the AI architecture of an enterprise product built on
+          <mark class="e-tech" data-r="r3" data-l="TECH">LLM agents</mark>.
+          Before that, from <mark class="e-date" data-r="r4" data-l="DATE">2022</mark>, she extracted entities and relations from
+          <mark class="e-dom" data-r="r4" data-l="DOMAIN">judicial documents</mark> for the
+          <mark class="e-dom" data-r="r4" data-l="DOMAIN">public sector</mark>.
+        </p>
 
-            <div class="row mt-4">
-              <div class="col-lg-4">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>23 Dec 1997</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Rome, Italy</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>26</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-9">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Bachelor's degree:</strong> <span>Computer Science and 
-                    Automation Engineer
-                  </span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Master's degree:</strong> <span>Artificial
-                      Intelligence and Robotics</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sveva.pepe@gmail.com</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
+        <div class="rels" aria-label="Extracted relations">
+          <p class="rels-h">relations</p>
+          <ol>
+            <li id="r1">(<b>Sveva Pepe</b>, <i>works_at</i>, Almawave Labs)</li>
+            <li id="r2">(<b>Sveva Pepe</b>, <i>role</i>, AI/ML Engineer)</li>
+            <li id="r3">(<b>Sveva Pepe</b>, <i>focus</i>, <span data-i18n="r3">AI architecture · LLM agents</span>)</li>
+            <li id="r4">(<b>Sveva Pepe</b>, <i>worked_on</i>, <span data-i18n="r4">NER &amp; relation extraction · legal text</span>)</li>
+            <li id="r5">(<b>Sveva Pepe</b>, <i>published_at</i>, AAAI 2022 · IEEE MLSP 2021)</li>
+            <li id="r6">(<b>Sveva Pepe</b>, <i>open_to</i>, <span data-i18n="r6">on-site roles in Europe</span>)</li>
+          </ol>
+        </div>
+        <p class="note" data-i18n="note">Annotated by hand, in the format of the entity- and relation-extraction systems I build.</p>
+      </div>
+
+      <aside class="id">
+        <img src="assets/img/profile-img-sveva.png" alt="Sveva Pepe" width="600" height="600">
+        <dl>
+          <dt data-i18n="idName">name</dt><dd>Sveva Pepe</dd>
+          <dt data-i18n="idRole">role</dt><dd>AI/ML Engineer</dd>
+          <dt data-i18n="idEdu">degree</dt><dd data-i18n="idEduV">M.Sc. AI &amp; Robotics, 110 cum laude</dd>
+        </dl>
+        <a class="btn" href="assets/pdf/sveva_pepe_cv_2026.pdf" target="_blank" rel="noopener" data-i18n="ctaCv">Download CV (PDF)</a>
+        <p class="id-links">
+          <a href="mailto:sveva.pepe@gmail.com">sveva.pepe@gmail.com</a>
+          <a href="https://www.linkedin.com/in/sveva-pepe-ba9945123/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/pepes97" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </aside>
+    </section>
+
+    <!-- ============ §1 NOW ============ -->
+    <section id="work" class="sec wrap">
+      <p class="num">§1</p>
+      <div>
+        <p class="meta"><span data-i18n="nowK">Now</span> — Almawave Labs, 2025 – <span data-i18n="present">present</span></p>
+        <h2 data-i18n="nowH">Designing the AI architecture of an enterprise product</h2>
+        <p class="intro" data-i18n="nowP">I'm responsible for the AI architecture: how LLM agents, workflows and services work together to process documents at scale. Follow a document through it:</p>
+
+        <div class="pipe">
+          <div class="track" aria-hidden="true"><span class="fill"></span></div>
+          <div class="stages" role="tablist" aria-label="Architecture, step by step">
+            <button role="tab" id="t1" aria-controls="p1" aria-selected="true"><i>01</i><span data-i18n="s1">Documents</span></button>
+            <button role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1"><i>02</i><span data-i18n="s2">Services</span></button>
+            <button role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1"><i>03</i><span data-i18n="s3">Workflows</span></button>
+            <button role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1"><i>04</i><span data-i18n="s4">LLM agents</span></button>
+            <button role="tab" id="t5" aria-controls="p5" aria-selected="false" tabindex="-1"><i>05</i><span data-i18n="s5">Data &amp; cost</span></button>
           </div>
         </div>
 
-        <div class="col text-center mt-2">
-          <a href="assets/pdf/sveva_pepe_cv_2024.pdf" target="_blank"
-            class="btn btn-outline-primary bi bi-file-pdf-fill">&nbsp;Curriculum Vitae</a>
+        <div class="panels">
+          <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
+            <p data-i18n="p1">Large-scale document-processing pipelines turn incoming documents into structured content the rest of the module can work on.</p>
+            <ul class="tech"><li>Python</li><li>Docling</li><li>PyMuPDF</li></ul>
+          </div>
+          <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+            <p data-i18n="p2">The AI components run as microservices that expose APIs, containerized and deployed on Kubernetes.</p>
+            <ul class="tech"><li>FastAPI</li><li>Docker</li><li>Kubernetes (AKS)</li></ul>
+          </div>
+          <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+            <p data-i18n="p3">Multi-step AI processing is orchestrated as workflows, so every step is tracked, retried and observable.</p>
+            <ul class="tech"><li>Temporal.io</li></ul>
+          </div>
+          <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
+            <p data-i18n="p4">LLM agents carry out the document analysis, orchestrated with LangChain and LangGraph.</p>
+            <p class="dec" data-i18n="d4"><b>My focus:</b> how the agents are designed and orchestrated.</p>
+            <ul class="tech"><li>LangChain</li><li>LangGraph</li></ul>
+          </div>
+          <div class="panel" role="tabpanel" id="p5" aria-labelledby="t5" hidden>
+            <p data-i18n="p5">Results live in a document database, and a cost-tracking system attributes LLM spend to each stage of the pipeline.</p>
+            <p class="dec" data-i18n="d5"><b>I built</b> the stage-level cost tracking, so AI costs stay measurable.</p>
+            <ul class="tech"><li>MongoDB</li></ul>
+          </div>
+        </div>
+
+        <div class="duo">
+          <article>
+            <h3 data-i18n="tH">An agent that writes the tests</h3>
+            <p data-i18n="tP">A LangGraph agent that generates tests automatically (pytest, httpx) and is integrated into the team's pre-deployment testing framework.</p>
+            <ul class="tech"><li>LangGraph</li><li>pytest</li><li>httpx</li><li>Temporal WorkflowEnvironment</li><li>testcontainers</li></ul>
+          </article>
+          <article>
+            <h3 data-i18n="lH">Owner of the AI architecture</h3>
+            <p data-i18n="lP">I coordinate the technical work on the AI side and the key decisions on the AI architecture, and shape the product roadmap together with product management.</p>
+          </article>
         </div>
       </div>
-    </section><!-- End About Section -->
+    </section>
 
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Coding Skills</h2>
-
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">Python <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">C/C++ <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">HTML & CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Matlab <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Java <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
+    <!-- ============ §2 BEFORE ============ -->
+    <section id="before" class="sec wrap">
+      <p class="num">§2</p>
+      <div>
+        <p class="meta"><span data-i18n="befK">Before</span> — Almawave, 2022 – 2025</p>
+        <h2 data-i18n="befH">NLP and LLMs for judicial and administrative documents</h2>
+        <p class="intro" data-i18n="befP">Client delivery for public-administration clients: custom solutions on legal text, where language is long, formal and precise.</p>
+        <ol class="clauses">
+          <li>
+            <h3 data-i18n="b1H">Extraction</h3>
+            <p data-i18n="b1P">LLM-based solutions for named entity recognition and relation extraction on judicial documents, including fine-tuning transformer models.</p>
+            <ul class="tech"><li>NER</li><li>Relation extraction</li><li>BERT</li><li>BART</li></ul>
+          </li>
+          <li>
+            <h3 data-i18n="b2H">Prompting</h3>
+            <p data-i18n="b2P">Prompt-engineering strategies designed for legal terminology and complex sentence structures.</p>
+          </li>
+          <li>
+            <h3 data-i18n="b3H">Evaluation</h3>
+            <p data-i18n="b3P">Custom evaluation metrics and standardized preprocessing workflows, reused to improve efficiency across multiple government projects.</p>
+          </li>
+        </ol>
       </div>
-    </section><!-- End Skills Section -->
+    </section>
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Science in Artificial Intelligence &amp; Robotics</h4>
-              <h5>September 2019 - October 2021</h5>
-              <p><em>Sapienza University of Rome, Rome, IT</em></p>
-              <p>Following my bachelor's degree, I pursued a master's degree in artificial intelligence and robotics,
-                concentrating in the machine learning sector, with a particular interest in natural language processing.
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Science in Computer Science &amp; Automation Engineering</h4>
-              <h5>September 2016 - July 2019</h5>
-              <p><em>Sapienza University of Rome, Rome, IT</em></p>
-              <p>I began my academic journey in 2016 by enrolling in the Computer Science and Automatic Engineering
-                course, which I completed in 2019 with a mark of 110 cum laude.</p>
-            </div>
-            <div class="resume-item">
-              <h4>High School diploma</h4>
-              <h5>September 2011 - July 2016</h5>
-              <p><em>Amedeo Avogadro High School, Rome, IT</em></p>
-              <p>In 2016, I graduated from the Amedeo Avogadro High School, which teaches only scientific topics.</p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Experience</h3>
-            <div class="resume-item">
-              <h4>NLP Engineer</h4>
-              <h5>March 2022 - Present </h5>
-              <p><em>Almawave, Rome, IT</em></p>
-              <ul>
-                <li>
-                  Research and development applied in the NLP field produce models and algorithms.
-                </li>
-                <li>
-                  Creation and industrialization of the models within the Iride® platform.
-                </li>
-                <li>
-                  Training models with consolidated best practices, methodologies, and tools of AI / Ops.
-                </li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Performance Engineer</h4>
-              <h5>November 2021 - March 2022 </h5>
-              <p><em>Moviri, Milan, IT</em></p>
-              Performance Testing and Tuning with LoadRunner, AppDynamics and Instana.
-            </div>
-            <div class="resume-item">
-              <h4>Scholarship for Research Activities</h4>
-              <h5>November 2020 - Jun 2021</h5>
-              <p><em>Sapienza University of Rome, Rome, IT</em></p>
-              The L3DAS project (Learning 3D Audio Sources) aims at encouraging and fostering research on the
-              afore-mentioned topics.
-              <ul>
-                <li>We build L3DAS dataset that contains multiple-source and
-                  multiple-perspective B-format Ambisonics audio recordings.
-                  The acoustic field is sampled of a large office room,
-                  placing two first-order Ambisonics microphones in the
-                  center of the room and moving a speaker reproducing the
-                  analytic signal in 252 fixed spatial positions.
-                </li>
-                <li>Relying on the collected Ambisonics impulse responses
-                  (IRs), existing clean monophonic datasets is augmented
-                  to obtain synthetic tridimensional sound sources by
-                  convolving the original sounds with our IRs. Clean files have been extracted from the
-                  Librispeech and FSD50K datasets.
-                </li>
-                <li> Then in particular,
-                  we analize two different tasks: i)
-                  3D Speech Enhancement and ii) 3D Sound Source Localization and
-                  Detection. In the first, the objective
-                  is the enhancement of speech signals immersed in
-                  a noisy 3D environment, instead, in the second, the
-                  aim is to detect the temporal activities of a known
-                  set of sound event classes and to further locate them
-                  in the space, in particular, focusing on the sound event
-                  localization and detection (SELD).</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Work Student</h4>
-              <h5>July 2016 - August 2016</h5>
-              <p><em>Realtime Technologies LTD, Dublin, IRL </em></p>
-              <ul>
-                <li>Testing electonic hardware in the form of Class 2DSEP printed circuit bords and electro-mechanical
-                  systems to ensure their functional compliance for biomedical industry.</li>
-                <li>Testing involves validation, verification and regression testing of the electronic hardware prior to
-                  the initial field trail of prototypes and subsequent production release of both new and existing
-                  biomedical products.</li>
-                <li>Assembling the electronic hardware into biomedical sensing devices for use in galvanic response,
-                  electromyography, electrocardiogram ad strain gauge amplifying.</li>
-                <li>Programming test software to instruct and control the running of the test procedure for the
-                  comparison of actual to predicted results using code-drievn testing.</li>
-                <li>Monitoring test data and corresponding two dimensional electrical signal profiles of the electronic
-                  hardware operating under test using graphical user interface testing.</li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
+    <!-- ============ §3 EXPERIENCE ============ -->
+    <section id="experience" class="sec wrap">
+      <p class="num">§3</p>
+      <div>
+        <h2 class="h2s" data-i18n="expH">Experience &amp; education</h2>
+        <ol class="cv">
+          <li>
+            <span class="when">2022 – <span data-i18n="present">present</span></span>
+            <div><h3>AI/ML Engineer — Almawave Labs</h3>
+              <p data-i18n="e1">Product development (2025 – present) · Client delivery (2022 – 2025). Almaviva Group; the company was renamed from Almawave to Almawave Labs in August 2026.</p></div>
+          </li>
+          <li>
+            <span class="when">2021 – 2022</span>
+            <div><h3>Performance Engineer — Moviri, Milan</h3>
+              <p data-i18n="e2">Optimized performance-testing frameworks with LoadRunner, AppDynamics and Instana.</p></div>
+          </li>
+          <li>
+            <span class="when">2020 – 2021</span>
+            <div><h3 data-i18n="e3H">Research scholarship — Sapienza University of Rome</h3>
+              <p data-i18n="e3">L3DAS project: built a 3D audio dataset and challenge for speech enhancement and sound event localization.</p></div>
+          </li>
+          <li>
+            <span class="when">2019 – 2021</span>
+            <div><h3>M.Sc. Artificial Intelligence &amp; Robotics — Sapienza</h3>
+              <p data-i18n="e4">110/110 cum laude, focus on machine learning and NLP. Certificate of Excellent Student, Sapienza, 2023.</p></div>
+          </li>
+          <li>
+            <span class="when">2016 – 2019</span>
+            <div><h3 data-i18n="e5H">B.Sc. Computer Science &amp; Automation Engineering — Sapienza</h3>
+              <p data-i18n="e5">110/110 cum laude.</p></div>
+          </li>
+        </ol>
       </div>
-    </section><!-- End Resume Section -->
+    </section>
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Projects</h2>
-          <p></p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-rob">Robotics</li>
-              <li data-filter=".filter-hri">HRI</li>
-              <li data-filter=".filter-mac">Machine Learning</li>
-              <li data-filter=".filter-nlp">NLP</li>
-              <li data-filter=".filter-o">Other</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" id=here data-aos="fade-up" data-aos-delay="100">
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-nlp filter-mac">
-            <div class="portfolio-wrap bg-white">
-              <img src="assets/img/portfolio/portfolio-13.png" class="img-fluid" alt="">
-
-              <div class="portfolio-info bg-white mt-2"><b><i>STEPS: <u>S</u>emantic <u>T</u>yping of <u>E</u>vent <u>P</u>rocesses with a
-                <u>S</u>equence-to-Sequence Approach</i></b></div>
-              <div class="portfolio-links">
-                <a href="https://github.com/SapienzaNLP/steps" data-gallery="portfolioGallery" title="Github"><i class="bx bxl-github"></i></a>
-                <a href="portfolio/portfolio13-details.html" title="More Details"><i class="bx bx-detail"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-mac">
-            <div class="portfolio-wrap bg-white">
-              <img src="assets/img/portfolio/portfolio-11.png" class="img-fluid" alt="">
-
-              <div class="portfolio-info bg-white mt-2"><b><i>A Machine Learning Approach to assess
-                    the Interlocutor Attention</i></b></div>
-              <div class="portfolio-links">
-                <a href="#here" data-gallery="portfolioGallery" title="Github"><i class="bx bxl-github"></i></a>
-                <a href="portfolio/portfolio11-details.html" title="More Details"><i class="bx bx-detail"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-rob">
-            <div class="portfolio-wrap bg-white">
-              <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
-
-              <div class="portfolio-info bg-white mt-2"><b><i>Optimal Trajectory generation in the Duckietown
-                    environment</i></b></div>
-              <div class="portfolio-links">
-                <a href="https://github.com/pepes97/Optimal-trajectory-generation-in-the-Duckietown-environment"
-                  data-gallery="portfolioGallery" title="Github"><i class="bx bxl-github"></i></a>
-                <a href="portfolio/portfolio1-details.html" title="More Details"><i class="bx bx-detail"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-rob filter-hri">
-            <div class="portfolio-wrap bg-white">
-              <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
-
-              <div class="portfolio-info bg-white mt-2"><b><i>MARIO: Pepper assistant for patients with senile
-                    dementia</i></b></div>
-              <div class="portfolio-links">
-                <a href="https://github.com/pepes97/Pepper-Interaction" data-gallery="portfolioGallery"
-                  title="Github"><i class="bx bxl-github"></i></a>
-                <a href="portfolio/portfolio2-details.html" title="More Details"><i class="bx bx-detail"></i></a>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-o filter-app">
-            <div class="portfolio-wrap bg-white">
-              <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="">
-
-              <div class="portfolio-info bg-white mt-2"><b><i>Duck Hunt 3D: a remake of the light gun shooter video
-                    game</i></b></div>
-              <div class="portfolio-links">
-                <a href="https://github.com/pepes97/Duck-Hunt" data-gallery="portfolioGallery" title="Github"><i
-                    class="bx bxl-github"></i></a>
-                <a href="portfolio/portfolio3-details.html" title="More Details"><i class="bx bx-detail"></i></a>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app filter-o">
-            <div class="portfolio-wrap bg-white">
-              <img src="assets/img/portfolio/portfolio-4.png" class="img-fluid" alt="">
-
-              <div class="portfolio-info bg-white mt-2"><b><i>GP Motorcycle Racing Ontology: an ontology on the domain
-                    of
-                    gran prix motorcycle racing</i></b></div>
-              <div class="portfolio-links">
-                <a href="https://github.com/pepes97/Grand-Prix-Motorcycle-Racing-Ontology"
-                  data-gallery="portfolioGallery" title="Github"><i class="bx bxl-github"></i></a>
-                <a href="portfolio/portfolio4-details.html" title="More Details"><i class="bx bx-detail"></i></a>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app filter-o">
-            <div class="portfolio-wrap bg-white">
-              <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="">
-              <div class="portfolio-info bg-white mt-2"><b><i>Share the music: chat with others who share your musical
-                    preferences</i></b></div>
-              <div class="portfolio-links">
-                <a href="https://github.com/pepes97/Share-The-Music" data-gallery="portfolioGallery" title="Github"><i
-                    class="bx bxl-github"></i></a>
-                <a href="portfolio/portfolio5-details.html" title="More Details"><i class="bx bx-detail"></i></a>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app filter-nlp filter-mac">
-            <div class="portfolio-wrap bg-white">
-              <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="">
-
-              <div class="portfolio-info bg-white mt-2"><b><i>Named Entity Recognition: identifying and
-                    recognizing entities through text</i></b></div>
-              <div class="portfolio-links">
-                <a href="https://github.com/pepes97/NER" data-gallery="portfolioGallery" title="Github"><i
-                    class="bx bxl-github"></i></a>
-                <a href="portfolio/portfolio6-details.html" title="More Details"><i class="bx bx-detail"></i></a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app filter-o">
-            <div class="portfolio-wrap bg-white">
-              <img src="assets/img/portfolio/portfolio-8.png" class="img-fluid" alt="">
-
-              <div class="portfolio-info bg-white mt-2"><b><i>Regular Decision Processes: non-Markovian extension of
-                    MDPs</i></b></div>
-              <div class="portfolio-links">
-                <a href="https://github.com/pepes97/Regular-Decision-Processes" data-gallery="portfolioGallery"
-                  title="Github"><i class="bx bxl-github"></i></a>
-                <a href="portfolio/portfolio8-details.html" title="More Details"><i class="bx bx-detail"></i></a>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app filter-mac">
-            <div class="portfolio-wrap bg-white">
-              <img src="assets/img/portfolio/portfolio-9.png" class="img-fluid" alt="">
-
-              <div class="portfolio-info bg-white mt-2"><b><i>DQNN: Deep Quaternion Neural Network for 3D Sound
-                    Source Localization and Detection</i></b></div>
-              <div class="portfolio-links">
-                <a href="https://github.com/pepes97/DQNN" data-gallery="portfolioGallery" title="Github"><i
-                    class="bx bxl-github"></i></a>
-                <a href="portfolio/portfolio9-details.html" title="More Details"><i class="bx bx-detail"></i></a>
-              </div>
-            </div>
-
-          </div>
-
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app filter-mac filter-nlp">
-            <div class="portfolio-wrap bg-white">
-              <img src="assets/img/portfolio/portfolio-7.png" class="img-fluid" alt="">
-
-              <div class="portfolio-info bg-white mt-2"><b><i>Semantic Role Labeling: finding semantic roles for each
-                    predicate in a sentence </i></b></div>
-              <div class="portfolio-links">
-                <a href="https://github.com/pepes97/SRL" data-gallery="portfolioGallery" title="Github"><i
-                    class="bx bxl-github"></i></a>
-                <a href="portfolio/portfolio7-details.html" title="More Details"><i class="bx bx-detail"></i></a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app filter-mac">
-            <div class="portfolio-wrap bg-white">
-              <img src="assets/img/portfolio/portfolio-10.png" class="img-fluid" alt="">
-
-              <div class="portfolio-info bg-white mt-2"><b><i>ASL: Classification of American Sign Language through
-                    Neural Networks</i></b></div>
-              <div class="portfolio-links">
-                <a href="https://github.com/pepes97/ASL" data-gallery="portfolioGallery" title="Github"><i
-                    class="bx bxl-github"></i></a>
-                <a href="portfolio/portfolio10-details.html" title="More Details"><i class="bx bx-detail"></i></a>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app filter-mac">
-            <div class="portfolio-wrap bg-white">
-              <img src="assets/img/portfolio/portfolio-121.png" class="img-fluid" alt="">
-
-              <div class="portfolio-info bg-white mt-2"><b><i>Reinforcement Learning: DQN algorithm in Assault-v0
-                    Env</i></b></div>
-              <div class="portfolio-links">
-                <a href="https://github.com/pepes97/Experimentation-Project" data-gallery="portfolioGallery"
-                  title="Github"><i class="bx bxl-github"></i></a>
-                <a href="portfolio/portfolio12-details.html" title="More Details"><i class="bx bx-detail"></i></a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
+    <!-- ============ §4 SKILLS ============ -->
+    <section id="skills" class="sec wrap">
+      <p class="num">§4</p>
+      <div>
+        <h2 class="h2s" data-i18n="skH">Skills</h2>
+        <dl class="skills">
+          <dt>AI &amp; LLM</dt><dd>LangChain, LangGraph, Pydantic AI, <span data-i18n="sk1">agent design (ReAct, multi-step reasoning, tool calling)</span>, RAG, prompt engineering, NER, <span data-i18n="sk2">relation extraction</span>, <span data-i18n="sk3">text classification</span>, Azure OpenAI</dd>
+          <dt>Backend &amp; orchestration</dt><dd>Python, FastAPI, Temporal.io, Docker, Kubernetes (AKS)</dd>
+          <dt data-i18n="sk4">Data &amp; documents</dt><dd>MongoDB, Docling, PyMuPDF</dd>
+          <dt>Cloud &amp; DevOps</dt><dd>Azure DevOps, CI/CD, Git, pytest, Locust</dd>
+        </dl>
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
 
-    <!-- ======= Publications Section ======= -->
-    <section id="publications" class="pub">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Publications</h2>
-          <div class="container mt-5">
-            <!-- <div class="row mb-5">
-              <div class="col-sm-2 abbr">
-                <abbr class="badge"> AAAI 2022</abbr>
-              </div>
-              <div class="col-sm-10">
-                <div class="title">STEPS: <u>S</u>emantic <u>T</u>yping of <u>E</u>vent <u>P</u>rocesses with a
-                  <u>S</u>equence-to-Sequence
-                  approach</div>
-                <div class="author"> <em><u>Pepe Sveva</u></em>, Barba Edoardo, Blloshmi Rexhina and 
-                  <a href="https://scholar.google.com/citations?user=BsgVJ-EAAAAJ" target="_blank">Navigli Roberto</a>
-                </div>
-                <div class="periodical"> <em>Association for the Advancement of Artificial Intelligence</em>
-                  ,
-                  2022. </div>
-                <div class="links mt-2">
-                  <a class="abstract btn btn-sm z-depth-0 waves-effect waves-light">Abtract</a>
-                  <a href="#" target="_blank" role="button"
-                    class="btn btn-sm z-depth-0 waves-effect waves-light">Paper</a>
-                </div>
-                <div class="abstract hidden mt-3">
-                  <p>
-                    Enabling computers to comprehend the intent of human actions by processing language is one of the
-                    fundamental goals
-                    of Natural Language Understanding. An emerging task in this
-                    context is that of free-form event process typing, which aims
-                    at understanding the overall goal of a protagonist in terms of
-                    an action and an object, given a sequence of events. This task
-                    was initially treated as a learning-to-rank problem by exploiting the similarity between processes
-                    and action/object textual definitions. However, this approach appears to be overly
-                    complex, binds the output types to a fixed inventory for possible word definitions and, moreover,
-                    leaves space for further
-                    enhancements as regards performance. In this paper, we advance the field by reformulating the
-                    free-form event process
-                    typing task as a sequence generation problem and put forward
-                    STEPS, an end-to-end approach for producing user intent in
-                    terms of actions and objects only, dispensing with the need
-                    for their definitions. In addition to this, we eliminate several
-                    dataset constraints set by previous works, while at the same
-                    time significantly outperforming them. We release the data
-                    and software at https://github.com/SapienzaNLP/steps.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> -->
-            <div class="row mb-5">
-              <div class="col-sm-2 abbr">
-                <abbr class="badge"> AAAI 2022</abbr>
-              </div>
-              <div class="col-sm-10">
-                <div class="title">STEPS: <u>S</u>emantic <u>T</u>yping of <u>E</u>vent <u>P</u>rocesses with a
-                  <u>S</u>equence-to-Sequence Approach
-                </div>
-                <div class="author"> <em><u>Pepe, Sveva</u></em>, Barba, Edoardo, Blloshmi, Rexhina and 
-                  <a href="https://scholar.google.com/citations?user=BsgVJ-EAAAAJ" target="_blank">Navigli, Roberto</a>
-                </div>
-                <div class="periodical"> <em>Association for the Advancement of Artificial Intelligence</em>,
-                  2022. </div>
-                <div class="links mt-2">
-                  <a class="abstract btn btn-sm z-depth-0 waves-effect waves-light me-3" role="button">Abtract</a>
-
-                  <a href="https://github.com/SapienzaNLP/steps/blob/main/docs/AAAI22_STEPS.pdf" target="_blank" role="button"
-                    class="btn btn-sm z-depth-0 waves-effect waves-light me-3">Paper</a>
-
-                  <a href="https://github.com/SapienzaNLP/steps" target="_blank" role="button"
-                    class="btn btn-sm z-depth-0 waves-effect waves-light">Code</a>
-                </div>
-                <!-- Hidden abs-->
-                <div class="abstract hidden mt-3">
-                  <p>
-                    Enabling computers to comprehend the intent of human actions by processing language is one of the
-                    fundamental goals
-                    of Natural Language Understanding. An emerging task in this
-                    context is that of free-form event process typing, which aims
-                    at understanding the overall goal of a protagonist in terms of
-                    an action and an object, given a sequence of events. This task
-                    was initially treated as a learning-to-rank problem by exploiting the similarity between processes
-                    and action/object textual definitions. However, this approach appears to be overly
-                    complex, binds the output types to a fixed inventory for possible word definitions and, moreover,
-                    leaves space for further
-                    enhancements as regards performance. In this paper, we advance the field by reformulating the
-                    free-form event process
-                    typing task as a sequence generation problem and put forward
-                    STEPS, an end-to-end approach for producing user intent in
-                    terms of actions and objects only, dispensing with the need
-                    for their definitions. In addition to this, we eliminate several
-                    dataset constraints set by previous works, while at the same
-                    time significantly outperforming them. We release the data
-                    and software at <a href="https://github.com/SapienzaNLP/steps" target="_blank">https://github.com/SapienzaNLP/steps</a>.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-2 abbr">
-                <abbr class="badge"> MLSP 2021</abbr>
-              </div>
-              <div class="col-sm-10">
-                <div class="title">L3DAS21 Challenge: Machine Learning for 3D Audio Signal Processing</div>
-                <div class="author">Guizzo, Eric, F. Gramaccioni, Riccardo, Jamili, Saeid, Marinoni, Christian,
-                  Massaro, Edoardo, Medaglia, Claudia, Nachira, Giuseppe, Nucciarelli, Leonardo, Paglialunga, Ludovica,
-                  Pennese, Marco, <em><u>Pepe, Sveva</u></em>, Rocchi, Enrico,
-                  Uncini, Aurelio and <a href="https://scholar.google.com/citations?user=H3Y52cMAAAAJ" target="_blank">
-                    Comminiello, Danilo </a></div>
-                <div class="periodical"> <em>IEEE International Workshop on MACHINE LEARNING FOR SIGNAL PROCESSING</em>, 2021.</div>
-                <div class="links mt-2">
-                  <a class="abstract btn btn-sm z-depth-0 waves-effect waves-light me-3">Abtract</a>
-                  <a href="https://arxiv.org/abs/2104.05499" target="_blank" role="button"
-                    class="btn btn-sm z-depth-0 waves-effect waves-light me-3">Paper</a>
-                    <a href="https://github.com/l3das/L3DAS21" target="_blank" role="button"
-                    class="btn btn-sm z-depth-0 waves-effect waves-light">Code</a>
-                </div>
-                <!-- Hidden abs-->
-                <div class="abstract hidden mt-3">
-                  <p>
-                    The L3DAS21 Challenge is aimed at encouraging and fostering collaborative research on machine
-                    learning
-                    for 3D audio signal processing, with particular focus on 3D speech enhancement (SE) and 3D sound
-                    localization and detection (SELD). Alongside with the challenge, we release the L3DAS21 dataset, a
-                    65
-                    hours 3D audio corpus, accompanied with a Python API that facilitates the data usage and results
-                    submission stage. Usually, machine learning approaches to 3D audio tasks are based on
-                    single-perspective Ambisonics recordings or on arrays of single-capsule microphones. We propose,
-                    instead, a novel multichannel audio configuration based multiple-source and multiple-perspective
-                    Ambisonics recordings, performed with an array of two first-order Ambisonics microphones. To the
-                    best
-                    of our knowledge, it is the first time that a dual-mic Ambisonics configuration is used for these
-                    tasks. We provide baseline models and results for both tasks, obtained with state-of-the-art
-                    architectures: FaSNet for SE and SELDNet for SELD. This report is aimed at providing all needed
-                    information to participate in the L3DAS21 Challenge, illustrating the details of the L3DAS21
-                    dataset,
-                    the challenge tasks and the baseline models.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-    </section><!-- End Publications Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact Me</h2>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-3 d-flex align-items-stretch">
-            <div class="info">
-              <div class="email">
-                <a href="mailto:sveva.pepe@gmail.com"><i class="bi bi-envelope"></i></a>
-                <h4>Email:</h4>
-                <p>sveva.pepe@gmail.com</p>
-              </div>
-              <br>
-              <div class="address">
-                <a href="https://telegram.me/svevapepe" target="_blanck"><i class="bi bi-telegram"></i></a>
-                <h4>Telegram: </h4>
-                <p>@svevapepe</p>
-              </div>
-              <br>
-              <div class="phone">
-                <a href="https://twitter.com/svevapepe" target="_blanck"><i class="bi bi-twitter"></i></a>
-                <h4>Twitter:</h4>
-                <p>@svevapepe</p>
-              </div>
-              <br>
-              <div class="phone">
-                <a href="https://www.instagram.com/sveva_pepe/" target="_blanck"><i class="bi bi-instagram"></i></a>
-                <h4>Instagram:</h4>
-                <p>@sveva_pepe</p>
-              </div>
-              <br>
-
-              <div class="phone">
-                <a href="https://www.github.com/pepes97" target="_blanck"><i class="bi bi-github"></i></a>
-                <h4>Github:</h4>
-                <p>pepes97</p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form id="gform" name="gform" enctype="text/plain" target="hidden_iframe" onsubmit="submitted=true;"
-              action="https://docs.google.com/forms/d/e/1FAIpQLSfqqnbnL60bsAcz2RuiZ0JiQO3I4I-nK0w7x-2Sf3Qgdysr8Q/formResponse?"
-              class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="entry.834138521">Your Name</label>
-                  <input type="text" name="entry.834138521" class="form-control" id="entry.834138521" autocomplete="off"
-                    required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="entry.352649424">Your Email</label>
-                  <input type="email" class="form-control" name="entry.352649424" id="entry.352649424"
-                    autocomplete="off" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="entry.778761771">Subject</label>
-                <input type="text" class="form-control" name="entry.778761771" id="entry.778761771" autocomplete="off"
-                  required>
-              </div>
-              <div class="form-group">
-                <label for="entry.1268692682">Message</label>
-                <textarea class="form-control" name="entry.1268692682" id="entry.1268692682" rows="10"
-                  autocomplete="off" required></textarea>
-              </div>
-              <div class="text-center"><button id="send_form" type="submit" value="submit">Send Message</button></div>
-            </form>
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:None;" onload="if(submitted){}"> </iframe>
-          </div>
-
-        </div>
-
+    <!-- ============ §5 RESEARCH ============ -->
+    <section id="research" class="sec wrap">
+      <p class="num">§5</p>
+      <div>
+        <h2 class="h2s" data-i18n="reH">Research</h2>
+        <ol class="pubs">
+          <li>
+            <span class="when">AAAI 2022</span>
+            <div><h3>STEPS: Semantic Typing of Event Processes with a Sequence-to-Sequence Approach</h3>
+              <p class="au"><b>Sveva Pepe</b>, Edoardo Barba, Rexhina Blloshmi, Roberto Navigli</p>
+              <p class="links"><a href="https://github.com/SapienzaNLP/steps/blob/main/docs/AAAI22_STEPS.pdf" target="_blank" rel="noopener">paper</a><a href="https://github.com/SapienzaNLP/steps" target="_blank" rel="noopener">code</a></p></div>
+          </li>
+          <li>
+            <span class="when">IEEE MLSP 2021</span>
+            <div><h3>L3DAS21 Challenge: Machine Learning for 3D Audio Signal Processing</h3>
+              <p class="au">E. Guizzo, R. F. Gramaccioni, S. Jamili, C. Marinoni, E. Massaro, C. Medaglia, G. Nachira, L. Nucciarelli, L. Paglialunga, M. Pennese, <b>S. Pepe</b>, E. Rocchi, A. Uncini, D. Comminiello</p>
+              <p class="links"><a href="https://arxiv.org/abs/2104.05499" target="_blank" rel="noopener">paper</a><a href="https://github.com/l3das/L3DAS21" target="_blank" rel="noopener">code</a></p></div>
+          </li>
+        </ol>
+        <p class="more" data-i18n="moreProj">Earlier university projects (NER, semantic role labeling, quaternion networks for 3D audio, reinforcement learning, robotics) are on <a href="https://github.com/pepes97" target="_blank" rel="noopener">GitHub</a>.</p>
       </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-  </main><!-- End #main -->
+    <!-- ============ §6 CONTACT ============ -->
+    <section id="contact" class="sec wrap">
+      <p class="num">§6</p>
+      <div>
+        <h2 class="h2s" data-i18n="coH">Contact</h2>
+        <p class="co"><a class="mail" href="mailto:sveva.pepe@gmail.com">sveva.pepe@gmail.com</a></p>
+        <p class="co-sub" data-i18n="coP">Based in Rome, open to relocation for on-site roles in Europe.</p>
+        <p class="co-links">
+          <a href="assets/pdf/sveva_pepe_cv_2026.pdf" target="_blank" rel="noopener" data-i18n="ctaCv2">CV (PDF)</a>
+          <a href="https://www.linkedin.com/in/sveva-pepe-ba9945123/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/pepes97" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </section>
+  </main>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-    </div>
-  </footer><!-- End  Footer -->
+  <footer class="wrap foot"><span>© <span id="y">2026</span> Sveva Pepe</span><span class="eof">EOF</span></footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-  <script type="text/javascript">
-    $('#gform').on('submit', function (e) {
-      $('#gform *').fadeOut(2000);
-      $('#gform').prepend('Your message has been sent. Thank you!');
-    });
-  </script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/common.js"></script>
-
+  <script src="assets/js/site.js"></script>
 </body>
-
 </html>
